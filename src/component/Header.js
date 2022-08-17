@@ -1,9 +1,7 @@
-import { useState } from 'react';
-import styled from 'styled-components';
-import { Tab } from './Tab';
+import styled from "styled-components";
+import { Tab } from "./Tab";
 
 export const ModalContainer = styled.div`
-  // TODO : Modal을 구현하는데 전체적으로 필요한 CSS를 구현합니다.
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,11 +10,13 @@ export const ModalContainer = styled.div`
 `;
 function Header() {
   return (
-    <div>
-      <img src='./bigmots_logo.png' alt='big_logo' />
-      <Tab />
+    <ModalContainer>
+      <img
+        src="https://i.pinimg.com/564x/52/bf/f0/52bff02f55b23a28e182d5b9d3235639.jpg"
+        alt="big_logo"
+      />
       <div>Header.js작동중</div>
-    </div>
+    </ModalContainer>
   );
 }
 
